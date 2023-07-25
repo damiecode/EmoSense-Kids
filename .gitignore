@@ -2,6 +2,8 @@ __pycache__/
 dataset/
 vgg.py
 resnet.py
+train.py
+test.py
 models/PrivateTest_model.t7
 models/
 move_images.py
