@@ -63,10 +63,7 @@ def classify_image(encoded_img_str):
                 )
         st.info(
                 
-                    "\n\n".join(
-                        f"{result['predicted_classes'][i]}:\t{result['probabilities'][i] * 100:0.2f}%" \
-                            for i in range(5)
-                        )
+                    "\n\n".join(f"{result['predicted_classes'][i] or i in range(5)}")
                 )
     else:
         st.error("Could not perform classification.")
