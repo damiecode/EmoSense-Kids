@@ -77,7 +77,8 @@ uploaded_img = st.sidebar.file_uploader(
                 help="Ensure that the uploaded image is focused on the area of the affected skin.",
                 on_change=uploaded_on_change_callback
             )
-file_upload_callback(uploaded_img)
+if uploaded_img:
+    file_upload_callback(uploaded_img)
 # if (prev_state != st.session_state.uploaded_img_changed) and uploaded_img:
 # if (st.session_state.uploaded_img_changed) and uploaded_img:
 #     prev_state = st.session_state.uploaded_img_changed
