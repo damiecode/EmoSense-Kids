@@ -5,7 +5,6 @@ import numpy as np
 import torch
 from PIL import Image
 
-import vgg
 from cp_net import CPNet
 from cp_util import DATA_TRANSFORMS
 
