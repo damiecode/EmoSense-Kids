@@ -38,14 +38,6 @@ def convert_image(img):
 
     return byte_img
 
-def camera_img_callback(img_input): 
-    # img_input = st.session_state.camera_img
-    img = Image.open(img_input) 
-    img_col.write("Camera Input Image :camera:")
-    img_col.image(img)
-    encoded_img = base64.b64encode(img_input.getvalue()).decode()
-    classify_image(encoded_img)
-
 def file_upload_callback(img_input): 
     # img_input = st.session_state.uploaded_img
     img = Image.open(img_input) 
