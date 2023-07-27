@@ -10,12 +10,12 @@ from cp_app_st import pain_emotion_from_image
 
 # URL = "http://127.0.0.1:5000/detect_skin_defect"
 
-st.set_page_config(layout="wide", page_title="Cerabral Palsey Classifier")
+st.set_page_config(layout="wide", page_title="Cerabral Palsy Classifier")
 
 st.write("## Classify emotion of cerabal palsey patient using pain scale.")
 st.write(
             """
-            Upload or take picture of a cerabral palsey patient to understand their emotion.
+            Upload or take picture of a cerabral palsy patient to understand their emotion.
             """
         )
 
