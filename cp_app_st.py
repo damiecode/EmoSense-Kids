@@ -21,7 +21,7 @@ IMAGE_MODEL.eval()
 
 def pain_emotion_from_image(body):
     class_to_idx = {
-                '0': f"1 - No pain", '10': "10 - Worst Possible Pain",
+                '0': "0 - No pain", '10': "10 - Worst Possible Pain",
                 '2': "2 - Mild pain", '4': "4 - Moderate Pain",
                 '6': "6 - Severe Pain", '8': "8 - Very Severe Pain"
             }
